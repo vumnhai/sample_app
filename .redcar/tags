@@ -1,15 +1,24 @@
-1320019655
+1320156616
+AddEmailUniquenessIndex	C:/Users/User/rails_projects/sample_app/db/migrate/20111101125334_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 Application	C:/Users/User/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	C:/Users/User/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Users/User/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
+CreateUsers	C:/Users/User/rails_projects/sample_app/db/migrate/20111031042422_create_users.rb	class CreateUsers 
 PagesController	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	class PagesController 
 PagesHelper	C:/Users/User/rails_projects/sample_app/app/helpers/pages_helper.rb	module PagesHelper
 SampleApp	C:/Users/User/rails_projects/sample_app/config/application.rb	module SampleApp
+User	C:/Users/User/rails_projects/sample_app/app/models/user.rb	class User 
 UsersController	C:/Users/User/rails_projects/sample_app/app/controllers/users_controller.rb	class UsersController 
 UsersHelper	C:/Users/User/rails_projects/sample_app/app/helpers/users_helper.rb	module UsersHelper
 about	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def about
 contact	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def contact
+down	C:/Users/User/rails_projects/sample_app/db/migrate/20111031042422_create_users.rb	  def self.down
+down	C:/Users/User/rails_projects/sample_app/db/migrate/20111101125334_add_email_uniqueness_index.rb	  def self.down
 help	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def help
 home	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def home
+logo	C:/Users/User/rails_projects/sample_app/app/helpers/application_helper.rb	  def logo
 new	C:/Users/User/rails_projects/sample_app/app/controllers/users_controller.rb	  def new
+show	C:/Users/User/rails_projects/sample_app/app/controllers/users_controller.rb	  def show
 title	C:/Users/User/rails_projects/sample_app/app/helpers/application_helper.rb	  def title
+up	C:/Users/User/rails_projects/sample_app/db/migrate/20111031042422_create_users.rb	  def self.up
+up	C:/Users/User/rails_projects/sample_app/db/migrate/20111101125334_add_email_uniqueness_index.rb	  def self.up

@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/ctran/annotate_models.git
+  revision: cfeec96c9ca0fa5035b10be3d73e798cc4fc52f7
+  specs:
+    annotate (2.4.1.beta1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -140,6 +146,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  annotate!
   autotest (= 4.4.6)
   autotest-rails-pure (= 4.1.2)
   coffee-rails (~> 3.1.1)
