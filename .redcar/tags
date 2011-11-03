@@ -1,5 +1,7 @@
-1320156616
+1320297489
 AddEmailUniquenessIndex	C:/Users/User/rails_projects/sample_app/db/migrate/20111101125334_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
+AddPasswordToUsers	C:/Users/User/rails_projects/sample_app/db/migrate/20111102010922_add_password_to_users.rb	class AddPasswordToUsers 
+AddSaltToUsers	C:/Users/User/rails_projects/sample_app/db/migrate/20111102031906_add_salt_to_users.rb	class AddSaltToUsers 
 Application	C:/Users/User/rails_projects/sample_app/config/application.rb	  class Application 
 ApplicationController	C:/Users/User/rails_projects/sample_app/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Users/User/rails_projects/sample_app/app/helpers/application_helper.rb	module ApplicationHelper
@@ -11,14 +13,25 @@ User	C:/Users/User/rails_projects/sample_app/app/models/user.rb	class User
 UsersController	C:/Users/User/rails_projects/sample_app/app/controllers/users_controller.rb	class UsersController 
 UsersHelper	C:/Users/User/rails_projects/sample_app/app/helpers/users_helper.rb	module UsersHelper
 about	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def about
+authenticate	C:/Users/User/rails_projects/sample_app/app/models/user.rb	  def self.authenticate(email, submitted_password)
+change	C:/Users/User/rails_projects/sample_app/db/migrate/20111102010922_add_password_to_users.rb	  def change
 contact	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def contact
 down	C:/Users/User/rails_projects/sample_app/db/migrate/20111031042422_create_users.rb	  def self.down
 down	C:/Users/User/rails_projects/sample_app/db/migrate/20111101125334_add_email_uniqueness_index.rb	  def self.down
+down	C:/Users/User/rails_projects/sample_app/db/migrate/20111102031906_add_salt_to_users.rb	  def self.down
+encrypt	C:/Users/User/rails_projects/sample_app/app/models/user.rb	    def encrypt(string)
+encrypt_password	C:/Users/User/rails_projects/sample_app/app/models/user.rb	    def encrypt_password
+gravatar_for	C:/Users/User/rails_projects/sample_app/app/helpers/users_helper.rb	  def gravatar_for(user, options = { :size => 50 })
+has_password?	C:/Users/User/rails_projects/sample_app/app/models/user.rb	  def has_password?(submitted_password)
 help	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def help
 home	C:/Users/User/rails_projects/sample_app/app/controllers/pages_controller.rb	  def home
 logo	C:/Users/User/rails_projects/sample_app/app/helpers/application_helper.rb	  def logo
+make_salt	C:/Users/User/rails_projects/sample_app/app/models/user.rb	    def make_salt
 new	C:/Users/User/rails_projects/sample_app/app/controllers/users_controller.rb	  def new
+password	C:/Users/User/rails_projects/sample_app/app/models/user.rb	  attr_accessor :password
+secure_hash	C:/Users/User/rails_projects/sample_app/app/models/user.rb	    def secure_hash(string)
 show	C:/Users/User/rails_projects/sample_app/app/controllers/users_controller.rb	  def show
 title	C:/Users/User/rails_projects/sample_app/app/helpers/application_helper.rb	  def title
 up	C:/Users/User/rails_projects/sample_app/db/migrate/20111031042422_create_users.rb	  def self.up
 up	C:/Users/User/rails_projects/sample_app/db/migrate/20111101125334_add_email_uniqueness_index.rb	  def self.up
+up	C:/Users/User/rails_projects/sample_app/db/migrate/20111102031906_add_salt_to_users.rb	  def self.up
